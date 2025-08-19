@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'great-vibes': ['Great Vibes', 'cursive'],
+				'sans': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +31,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +57,19 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Custom wedding colors
+				ocean: {
+					deep: 'hsl(var(--ocean-deep))',
+					light: 'hsl(var(--ocean-light))'
+				},
+				sand: {
+					warm: 'hsl(var(--sand-warm))',
+					light: 'hsl(var(--sand-light))'
+				},
+				sunset: {
+					gold: 'hsl(var(--sunset-gold))',
+					coral: 'hsl(var(--sunset-coral))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
