@@ -57,12 +57,26 @@ export const LoveStory = () => {
   };
 
   return (
-    <section className="py-16 px-6 bg-gradient-beach">
-      <div className="text-center mb-12">
-        <h2 className="font-playfair text-4xl font-bold text-foreground mb-4">
+    <section className="py-16 px-6 bg-gradient-beach relative overflow-hidden">
+      {/* Beach particle overlay */}
+      <div className="absolute inset-0 beach-particles opacity-30"></div>
+      
+      {/* Floating elements */}
+      <div className="absolute top-8 right-4 w-6 h-6 rounded-full bg-ocean-light/30 animate-float" style={{animationDelay: '1.5s'}}></div>
+      <div className="absolute bottom-12 left-8 w-4 h-4 rounded-full bg-sunset-coral/40 animate-wave" style={{animationDelay: '3s'}}></div>
+      
+      <div className="text-center mb-12 relative z-10">
+        <h2 className="font-playfair text-4xl font-bold text-foreground mb-4 animate-shimmer"
+            style={{
+              background: 'linear-gradient(90deg, hsl(var(--ocean-deep)) 0%, hsl(var(--primary)) 50%, hsl(var(--ocean-deep)) 100%)',
+              backgroundSize: '200% 100%',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}>
           Our Love Story
         </h2>
-        <div className="w-20 h-1 bg-gradient-sunset mx-auto rounded-full"></div>
+        <div className="w-20 h-1 bg-gradient-sunset mx-auto rounded-full animate-wave"></div>
       </div>
 
       <div className="flex items-center justify-center gap-8 mb-8">
