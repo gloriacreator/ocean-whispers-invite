@@ -15,7 +15,7 @@ export const Header = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-6 animate-fade-in">
-        <h1 className="font-great-vibes text-6xl md:text-7xl text-white mb-4 drop-shadow-lg animate-shimmer whitespace-nowrap"
+        <h1 className="font-great-vibes text-4xl sm:text-5xl md:text-6xl text-white mb-4 drop-shadow-lg animate-shimmer"
             style={{
               background: 'linear-gradient(90deg, #ffffff 0%, #e6f3ff 50%, #ffffff 100%)',
               backgroundSize: '200% 100%',
